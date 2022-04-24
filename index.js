@@ -12,3 +12,7 @@ app.set('view engine', 'ejs');
 app.get('/', (req, res) => {
   res.render('index');
 });
+
+app.get('/view-list', (req, res) => {
+  res.render('view-list');
+});
