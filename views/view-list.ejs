@@ -1,18 +1,9 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>View List</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="" />
-  </head>
+  <%- include('./partials/head.ejs') %>
   <body>
-    <h1>To Do List:</h1>
-
-    <%toDoList.forEach(item => {%>
-    <h3><%=item.activity%></h3>
+    <%- include('./partials/header.ejs') %> <%toDoList.forEach(item => {%>
+    <h3 class=""><%=item.activity%></h3>
     <!-- list will be a clickable button that modifies the done property -->
     <p><%=item.done%></p>
     <%})%>

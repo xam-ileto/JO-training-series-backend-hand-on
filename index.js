@@ -8,6 +8,9 @@ console.log(`server running at port ${PORT}`);
 // render view engine
 app.set('view engine', 'ejs');
 
+// set public folder to access external CSS sheets
+app.use(express.static(__dirname + '/public'));
+
 // TO DO: specify use of body parser
 // write code here
 

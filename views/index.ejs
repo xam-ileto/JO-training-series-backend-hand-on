@@ -1,25 +1,20 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>To Do List</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="" />
-  </head>
+  <%- include('./partials/head.ejs') %>
   <body>
-    <h1>To Do List</h1>
+    <%- include('./partials/header.ejs') %>
 
-    <form action="" method="" id="add-todo">
-      <h3>Activity:</h3>
-      <input type="text" name="activity" />
-      <button type="submit" form="add-todo">Add to list!</button>
-    </form>
+    <div class="">
+      <form action="" method="" id="add-todo">
+        <h3>Add an activity:</h3>
+        <input type="text" name="activity" />
+        <button type="submit" form="add-todo">Add to list!</button>
+      </form>
 
-    <form action="/view-list" method="get" id="view-list-link">
-      <button type="submit" form="view-list-link">View list</button>
-    </form>
+      <form action="/view-list" method="get" id="view-list-link">
+        <button type="submit" form="view-list-link">View list</button>
+      </form>
+    </div>
 
     <script src="" async defer></script>
   </body>
