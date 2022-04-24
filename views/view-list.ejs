@@ -11,6 +11,12 @@
   <body>
     <h1>To Do List:</h1>
 
+    <%toDoList.forEach(item => {%>
+    <h3><%=item.activity%></h3>
+    <!-- list will be a clickable button that modifies the done property -->
+    <p><%=item.done%></p>
+    <%})%>
+
     <script src="" async defer></script>
   </body>
 </html>
