@@ -3,17 +3,21 @@
   <%- include('./partials/head.ejs') %>
   <body>
     <%- include('./partials/header.ejs') %>
-
-    <div class="">
-      <form action="" method="" id="add-todo">
-        <h3>Add an activity:</h3>
-        <input type="text" name="activity" />
-        <button type="submit" form="add-todo">Add to list!</button>
-      </form>
-
-      <form action="/view-list" method="get" id="view-list-link">
-        <button type="submit" form="view-list-link">View list</button>
-      </form>
+    <div class="position-relative">
+      <div
+        class="bg-white position-absolute center p-5 border border-primary rounded text-center"
+      >
+        <form action="" method="" id="add-todo">
+          <h3 class="d-inline">Add an activity:</h3>
+          <br />
+          <input class="mt-4" type="text" name="activity" />
+          <button type="submit" form="add-todo">Add to list!</button>
+        </form>
+        <br />
+        <form action="/view-list" method="get" id="view-list-link">
+          <button type="submit" form="view-list-link">View list</button>
+        </form>
+      </div>
     </div>
 
     <script src="" async defer></script>
