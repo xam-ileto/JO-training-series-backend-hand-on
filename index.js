@@ -36,3 +36,6 @@ app.get('/view-list', (req, res) => {
 
 // TO DO: create POST method for retrieving form data and adding it to the db
 // write code here
+
+// TO DO: create POST method for changing the done property (✔ and ✖)
+// write code here
