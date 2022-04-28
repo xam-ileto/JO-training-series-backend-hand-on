@@ -28,7 +28,7 @@ app.get('/view-list', (req, res) => {
 
   // first item in to do list is a sample
   toDoList.push({ activity: 'This is a sample activity', done: false });
-  toDoList.push({ activity: 'This is a sample activity', done: false });
+  toDoList.push({ activity: 'This is a sample activity', done: true });
 
   //   renders view list page and passes the to do list array
   res.render('view-list', { toDoList });

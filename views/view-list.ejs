@@ -2,12 +2,24 @@
 <html>
   <%- include('./partials/head.ejs') %>
   <body>
-    <%- include('./partials/header.ejs') %> <%toDoList.forEach(item => {%>
-    <h3 class=""><%=item.activity%></h3>
-    <!-- list will be a clickable button that modifies the done property -->
-    <p><%=item.done%></p>
-    <%})%>
-
+    <%- include('./partials/header.ejs') %>
+    <div class="position-relative height-100">
+      <div
+        class="bg-white position-absolute center p-5 border border-primary rounded text-left lr-center"
+      >
+        <%toDoList.forEach(item => {%> <% if (item.done) {%>
+        <!-- if item is done, prints a check -->
+        <p class="d-inline mr-5">✔</p>
+        <%} else {%>
+        <!-- if item is unfinished, prints an X -->
+        <p class="d-inline mr-5">✖</p>
+        <% }%>
+        <h3 class="d-inline"><%=item.activity%></h3>
+        <!-- list will be a clickable button that modifies the done property -->
+        <br />
+        <%})%>
+      </div>
+    </div>
     <script src="" async defer></script>
   </body>
 </html>
