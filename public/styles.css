@@ -6,3 +6,7 @@ html {
   margin-top: 15%;
   margin-left: 40%;
 }
+
+.border {
+  border-width: 3px !important;
+}
