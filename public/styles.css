@@ -4,9 +4,15 @@ html {
 
 .center {
   margin-top: 15%;
-  margin-left: 40%;
+  margin-left: 38%;
 }
 
 .border {
   border-width: 3px !important;
+}
+
+.fixed-w {
+  max-width: 300px;
+  word-wrap: break-word;
+  display: inline-block;
 }

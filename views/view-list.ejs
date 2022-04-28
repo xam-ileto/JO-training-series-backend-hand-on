@@ -7,16 +7,22 @@
       <div
         class="bg-white position-absolute center p-5 border border-primary rounded text-left lr-center"
       >
-        <%toDoList.forEach(item => {%> <% if (item.done) {%>
-        <!-- if item is done, prints a check -->
-        <p class="d-inline mr-5 list-item">✔</p>
-        <%} else {%>
-        <!-- if item is unfinished, prints an X -->
-        <p class="d-inline mr-5 list-item">✖</p>
-        <% }%>
-        <h3 class="d-inline"><%=item.activity%></h3>
-        <!-- list will be a clickable button that modifies the done property -->
-        <br />
+        <%toDoList.forEach(item => {%>
+        <div class="my-3">
+          <% if (item.done) {%>
+
+          <!-- if item is done, prints a check -->
+          <p class="d-inline mr-5 list-item">✔</p>
+          <%} else {%>
+          <!-- if item is unfinished, prints an X -->
+          <p class="d-inline mr-5 list-item">✖</p>
+          <% }%>
+          <div class="fixed-w">
+            <h3 class="d-inline"><%=item.activity%></h3>
+          </div>
+          <!-- list will be a clickable button that modifies the done property -->
+          <br />
+        </div>
         <%})%>
       </div>
     </div>
