@@ -19,6 +19,7 @@ app.get('/', (req, res) => {
   res.render('index');
 });
 
+// this function is for showing the items in the to do list
 app.get('/view-list', (req, res) => {
   var toDoList = [];
 
@@ -26,6 +27,7 @@ app.get('/view-list', (req, res) => {
   // write code here
 
   // first item in to do list is a sample
+  toDoList.push({ activity: 'This is a sample activity', done: false });
   toDoList.push({ activity: 'This is a sample activity', done: false });
 
   //   renders view list page and passes the to do list array
