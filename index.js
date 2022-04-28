@@ -23,7 +23,7 @@ app.get('/', (req, res) => {
 app.get('/view-list', (req, res) => {
   var toDoList = [];
 
-  //   TO DO: retrieve to do list data from server
+  //   TO DO: retrieve to do list data from server and add it to the toDoList variable
   // write code here
 
   // first item in to do list is a sample
@@ -34,8 +34,8 @@ app.get('/view-list', (req, res) => {
   res.render('view-list', { toDoList });
 });
 
-// TO DO: create POST method for retrieving form data and adding it to the db
+// TO DO: create POST method for retrieving form data (in index.ejs) and adding it to the DB
 // write code here
 
-// TO DO: create POST method for changing the done property (✔ and ✖)
+// TO DO: create POST method for changing the done property in the DB when clicking on ✔ or ✖
 // write code here
