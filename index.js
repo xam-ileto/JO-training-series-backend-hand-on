@@ -21,7 +21,7 @@ app.get('/', (req, res) => {
 
 // this function is for showing the items in the to do list
 app.get('/view-list', (req, res) => {
-  var toDoList = [];
+  var toDoList = []; // toDoList has 2 properties: activity: string (stores the activity name) and done: boolean (stores if activity is done or not)
 
   //   TO DO: retrieve to do list data from server and add it to the toDoList variable
   // write code here
