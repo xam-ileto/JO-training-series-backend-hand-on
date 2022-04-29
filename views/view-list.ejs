@@ -12,10 +12,10 @@
           <% if (item.done) {%>
 
           <!-- if item is done, prints a check -->
-          <p class="d-inline mr-5 list-item">✔</p>
+          <p class="d-inline mr-5 list-item" id="<%= item._id %>">✔</p>
           <%} else {%>
           <!-- if item is unfinished, prints an X -->
-          <p class="d-inline mr-5 list-item">✖</p>
+          <p class="d-inline mr-5 list-item" id="<%= item._id %>">✖</p>
           <% }%>
           <div class="fixed-w">
             <h3 class="d-inline"><%=item.activity%></h3>

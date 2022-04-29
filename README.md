@@ -2,5 +2,5 @@
 This website is a To Do List where users can add and modify items, as well as view their to do list.
 
 **Instructions**  
-Look for the lines of code that say "TO DO" in index.js and index.ejs  
+Look for the lines of code that say "TODO" in in the project folder
 Follow the specifications written in the TO DO instruction
